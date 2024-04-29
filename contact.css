@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar section */
+nav{
+  display: flex;
+   height: 100px;
+   background: #1b1b1b;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    justify-content:space-around;
+    padding: 10px 50px 10px 100px;
+ }
+ nav h1{
+  font-size: 40px;
+  color: white;
+  margin-left: -50px;
+ }
+ nav img{
+     border-radius: 100%;
+     height: 100px;
+     margin-left: -100px;
+ }
+ nav ul{
+     display: flex;
+     list-style: none;
+     align-items: center;
+     gap: 30px;
+ }
+ nav ul li{
+     margin: 0 5px;
+     justify-content: center;
+ }
+ nav ul li a{
+     color: #fff;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     padding: 8px 10px;
+     border-radius: 5px;
+     transition: all 0.3s ease;
+     text-transform: capitalize;
+ }
+ nav ul li a:hover,
+ nav ul li a.active{
+    color:#1b1b1b; 
+    background: #fff;
+ }
+ .btn button{
+     padding: 10px 20px;
+     background-color: orange;
+     color: white;
+     border-radius: 5px;
+     border: none;
+     margin: 20px;
+   
+ }
+ .btn span{
+     color: white;
+ }
+ nav .menu-btn i{
+ color: white;
+ font-size: 25px;
+ cursor: pointer;
+ display: none;
+ }
+ #click{
+     display: none;
+ }
+ #click:checked ~ .menu-btn i:before{
+ content:"\f00d";
+ }
+ nav .btn1{
+  background-color: coral;
+  padding: 10px 20px;
+  border-radius: 20px;
+  align-items: center;
+  margin-right: -20px;
+ }
+ nav .btn2{
+  background-color: coral;
+  padding: 10px 20px;
+  border-radius: 20px;
+  align-items: center;
+  margin-right: -60px;
+ }
+ 
+ /* contact section */
+.contact2{
+   display: flex;
+    justify-content: space-around;
+    background-image: url(../photo/background\ .jpg);
+    padding-left: 40px;
+    padding-top: 30px;
+    color: white;
+    height: 100vh;
+    background-size: cover;
+    
+  
+}
+.email2{
+    width: 50%;
+    margin-top: 50px;
+}
+.email2 input{
+    width: 350px;
+    padding-left: 10px;
+    height: 40px;
+    background-color: white;
+    margin: 10px auto;
+}
+.email2 textarea{
+    width: 352px;
+    height: 325px;
+    background-color: white;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.email2 button{
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 365px;
+    background-color: rgb(253, 98, 41);
+    color: black    ;
+    padding-bottom: 10px;
+    padding-top: 10px;
+   margin-top: 10px;  
+}
+
+/* .email2 ::placeholder{
+    color: white;
+} */
+
+.info{
+    width: 50%;
+    margin-top: 50px; 
+}
+
+.info a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.city{
+    display: flex;
+    gap: 30px; 
+}
+.city i{
+    margin: 20px;
+    font-size: 35px;
+}
+
+.font{
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 40px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;  
+}
+.font i {
+  background-color: rgba(42, 41, 41, 0.534);
+  color: blue;
+  font-size: 40px;
+  box-shadow: 2px solid;
+  width: 30px;
+  /* text-align: center; */
+  padding: 20px;
+  /* width: left 50px; */
+  height: 30px;
+  border-radius: 100%;
+}
+
+
+.city i:hover{
+    color: orange;
+}
+button:hover{
+    transition: 2ms;
+    background-color: black;
+    color: white;
+}
+
+/* footer section */
+footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: black;
+    padding: 50px;
+  }
+  .footer-logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+  .location{
+    width: 30%;
+  }
+  
+  footer h4{
+    color: white;
+    font-size: 30px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  }
+  footer h4{
+    border-bottom: 2px solid orange;
+    width: 150px;
+  
+  }
+  .location a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+  }
+  .email input{
+  border: none;
+  width: 250px;
+  height: 45px;
+  display: block;
+  padding-left: 10px;
+  margin: 14px 0;
+  text-transform: capitalize;
+  
+  }
+  .email .inputsubmit{
+    padding: 0px 20px;
+  background-color: rgb(255, 103, 48);
+   color: white;
+   width: 260px;
+  
+  }
+  .contact1 a{
+  display: flex;
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  gap: 10px;
+  font-size: 20px;
+  }
+  .location a{
+    display: flex;
+  gap: 10px;
+  font-size: 20px;
+  }
+  .icons i{
+    color: white;
+  margin: 5px;
+  font-size: 25px;
+  margin-top: 30px;
+  
+  
+  }
+  footer i:hover{
+    color: rgb(250, 100, 45);
+  }
+  
+  @media(max-width:480px){
+   /* navbar section */
+   nav .menu-btn i{
+    display: block;
+ }
+ nav ul{
+position: fixed;
+top: 100px;
+left: -100%;
+background: #111;
+height: 100vh;
+width: 100%;
+display: block;
+text-align: center;
+transition: all0.3s ease;
+ }
+ #click:checked ~ ul{
+     left: 0%; 
+ }
+ nav ul li{
+     margin: 40px 0;
+
+ }
+ nav ul li a{
+     font-size: 25px;
+ }
+ nav ul li a:hover,
+ nav ul li a.active{
+color:cyan; 
+background: none;
+}
+nav h1{
+    margin-left: 10px;
+}
+ .btn button{
+ display: block ;
+ 
+}
+ ul .btn1{
+    margin-left: 30px ;
+}
+ul .btn2{
+   margin: 20px;
+}
+/* contact section */
+.contact2{
+    height: 400px;
+}
+.email2{
+    margin-top: 170px;
+    margin-left: -30px;
+}
+.email2 input{
+    width: 80%;
+    height: 20px;
+}
+.email2 #text{
+    width: 80%;
+    height: 70px;
+}
+.email2 button{
+width: 30%;
+padding: 5px;
+}
+.info{
+    margin-top: 0;
+    
+}
+.city{
+    margin-left: -220px;
+    margin-top: -20px;
+}
+.city i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.city a{
+    font-size: 20px;
+    margin-left: -30px;
+}
+.font{
+    border-bottom: none;
+    border-top: none;
+    margin-top: -80px;
+}
+.font i{
+    display: flex;
+    font-size: 20px;
+    width: 5%;
+    height: 10px;
+    align-items: center;
+    margin-left: 140px;
+    margin-bottom: -20px;
+}
+
+/* footer section */
+footer{
+  flex-direction: column;
+ gap: 50px;
+ align-items: center;
+}
+.footer-logo{
+ align-items: center;
+ text-align: center;
+}
+.location{
+ margin-right: 40px;
+ text-align: center;
+}
+.contact1{
+ align-items: center;
+ text-align: center;
+ margin-left: 60px;
+}
+.contact1 h4{
+ align-items: center;
+ text-align: center;
+ margin-left: 35px;
+}
+.email h4{
+ align-items: center;
+ text-align: center;
+ margin-left: 60px;
+}
+
+  }

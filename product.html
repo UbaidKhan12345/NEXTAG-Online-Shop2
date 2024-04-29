@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body>
+<input type="text" id="user">
+<br/>
+<input type="password" id="pass">
+<br/>
+<input type="submit" id="submit" value="submit" onclick="app()">
+<br/>
+<br/>
+<table id="mytab" border="1">
+    <thead>
+        <tr>
+            <th>user name</th>
+            <th>password</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script>
+    function app() {
+        var use=$("#user").val();
+        var pass=$("#pass").val();
+
+
+        $("#mytab tbody").append(
+            "<tr><td>"+ use +"</td>" + "</td>" +pass + "</td></tr>"
+        );
+        $("#user").val("");
+        $("#pass").val("");
+    }
+//     $(document).ready(function(){
+// $("#submit").click(function(){
+//     app();
+// });
+//     });
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quidem reprehenderit esse perspiciatis dolorem distinctio explicabo hic 
+consectetur consequuntur deserunt!</p>
+<p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi facere, dolorem reiciendis amet cumque aperiam quas soluta magni quidem autem eum numquam nesciunt ratione, odit repellat vel dignissimos eaque distinctio voluptas delectus ea tempore? Excepturi modi, totam accusantium aut doloremque ab iure mollitia reprehenderit perspiciatis dolor consequatur, eum rerum! Perspiciatis necessitatibus delectus libero asperiores incidunt harum fugiat quod voluptates earum accusamus. Dolor, deserunt nam explicabo id necessitatibus aut tempore inventore maxime culpa! Fuga dolorum voluptatibus, consequuntur atque ratione odio reprehenderit repellat necessitatibus dolore autem, similique labore. Veritatis quidem necessitatibus
+molestiae, nobis odio, quam repellendus eius reprehenderit sapiente reiciendis rerum.</p>
+<button id="sh">show</button>
+<button id="hi">hide</button>
+<button id="tog">toggle</button>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" 
+integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function()
+    {
+        $("#h1").click(function()
+        {
+            $("p").hide(1000);
+        })
+        $("#sh").click(function()
+        {
+            $("p").show(1000);      
+    })
+    $("#tog").click(function()
+        {
+$(".para").toggle(1000);
+        
+        })
+    
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar section */
+nav{
+    display: flex;
+     height: 100px;
+     background: #1b1b1b;
+      align-items: center;
+      top: 0;
+      position: sticky;
+      justify-content:space-around;
+      padding: 10px 50px 10px 100px;
+      z-index: 100;
+   }
+   nav h1{
+    font-size: 40px;
+    color: white;
+    margin-left: -50px;
+   }
+   nav img{
+       border-radius: 100%;
+       height: 100px;
+       margin-left: -100px;
+   }
+   nav ul{
+       display: flex;
+       list-style: none;
+       align-items: center;
+       gap: 30px;
+   }
+   nav ul li{
+       margin: 0 5px;
+       justify-content: center;
+   }
+   nav ul li a{
+       color: #fff;
+       text-decoration: none;
+       font-size: 20px;
+       font-weight: 500;
+       letter-spacing: 1px;
+       padding: 8px 10px;
+       border-radius: 5px;
+       transition: all 0.3s ease;
+       text-transform: capitalize;
+   }
+   nav ul li a:hover,
+   nav ul li a.active{
+      color:#1b1b1b; 
+      background: #fff;
+   }
+   .btn button{
+       padding: 10px 20px;
+       background-color: orange;
+       color: white;
+       border-radius: 5px;
+       border: none;
+       margin: 20px;
+     
+   }
+   .btn span{
+       color: white;
+   }
+   nav .menu-btn i{
+   color: white;
+   font-size: 25px;
+   cursor: pointer;
+   display: none;
+   }
+   #click{
+       display: none;
+   }
+   #click:checked ~ .menu-btn i:before{
+   content:"\f00d";
+   }
+   nav .btn1{
+    background-color: coral;
+    padding: 10px 20px;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: -20px;
+   }
+   nav .btn2{
+    background-color: coral;
+    padding: 10px 20px;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: -60px;
+   }
+
+/* cards section */
+.nav{
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.card a button{
+    padding: 8px;
+    margin: 10px 0px;
+    margin-right: 100px;
+    border-radius: 10px;
+    background-color: coral;
+    
+}
+.card i{
+    font-size: 15px;
+    color: green;
+    padding-right: 110px;
+    padding-top: -40px;
+}
+.card{
+   height: 330px;
+   width: 200px;
+   background-color: rgb(222, 184, 135);
+   /* text-align: center;  */
+   text-transform: capitalize;
+   margin: 15px 10px 40px 20px;
+   border: 1px black solid;
+   border-radius: 5px;
+   box-shadow: 2px 2px 10px 2px;
+   padding: 5px 5px;
+   flex-wrap: wrap;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.card a span{
+   padding-left: 130px;
+   padding-top: -50px;
+   font-size: 20px;
+   text-decoration: underline;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card 
+button:hover{
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+}
+/* footer section */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: black;
+    padding: 50px;
+}
+.footer-logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.location{
+    width: 30%;
+}
+
+footer h4{
+    color: white;
+    font-size: 30px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+footer h4{
+    border-bottom: 2px solid orange;
+    width: 150px;
+
+}
+.location a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+.email input{
+border: none;
+width: 250px;
+height: 45px;
+display: block;
+padding-left: 10px;
+margin: 14px 0;
+text-transform: capitalize;
+
+}
+.email .inputsubmit{
+    padding: 0px 20px;
+ background-color: rgb(255, 103, 48);
+   color: white;
+   width: 260px;
+  
+}
+.contact a{
+display: flex;
+margin: 20px;
+color: white;
+text-decoration: none;
+gap: 10px;
+font-size: 20px;
+}
+.location a{
+    display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+.icons i{
+    color: white;
+margin: 5px;
+font-size: 25px;
+margin-top: 30px;
+
+ 
+}
+footer i:hover{
+    color: rgb(250, 100, 45);
+}
+
+@media(max-width:480px){
+    /* navbar section */
+    nav .menu-btn i{
+     display: block;
+  }
+  nav ul{
+ position: fixed;
+ top: 100px;
+ left: -100%;
+ background: #111;
+ height: 100vh;
+ width: 100%;
+ display: block;
+ text-align: center;
+ transition: all0.3s ease;
+  }
+  #click:checked ~ ul{
+      left: 0%; 
+  }
+  nav ul li{
+      margin: 40px 0;
+ 
+  }
+  nav ul li a{
+      font-size: 25px;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+ color:cyan; 
+ background: none;
+ }
+ nav h1{
+     margin-left: 10px;
+ }
+  .btn button{
+  display: block ;
+  
+ }
+  ul .btn1{
+     margin-left: 30px ;
+ }
+ ul .btn2{
+    margin: 20px;
+ }
+ /* product section */
+ .card{
+    width: 100%;
+    height: 300px;   
+ }
+ .card span{
+    margin-top: 10px;
+    margin-right: 10px;
+ }
+ .card i{
+    margin-left: -195px;
+    margin-top: 20px;
+ }
+ .card img{
+    width: 100%;
+ }
+ .card:hover{
+    transform: none;
+ }
+
+ /* footer section */
+footer{
+    flex-direction: column;
+   gap: 50px;
+   align-items: center;
+  }
+  .footer-logo{
+   align-items: center;
+   text-align: center;
+  }
+  .location{
+   margin-right: 40px;
+   text-align: center;
+  }
+  .contact{
+   align-items: center;
+   text-align: center;
+   margin-left: 50px;
+  }
+  .contact h4{
+   align-items: center;
+   text-align: center;
+   margin-left: 40px;
+  }
+  .email h4{
+   align-items: center;
+   text-align: center;
+   margin-left: 60px;
+  }
+  
+}
